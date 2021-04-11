@@ -8,7 +8,7 @@
   "private": true,
   "scripts": {
     "start": "webpack",
-    "start-dev": "webpack --mode='development' --watch",
+    "start-dev": "webpack --mode=development --watch",
     "server": "nodemon server/index.js"
   },
   "dependencies": {
