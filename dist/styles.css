@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  background-color: #1a1a1a;
+}
+
+.landing {
+  background-image: url("./img/laughing.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 900px;
+  height: 1200px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.transparent-layer {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.announcement {
+  margin: 0;
+  font-weight: 900;
+  max-width: 100%;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 4rem;
+}
+
+@media screen and (min-width: 321px) {
+  .announcement {
+    font-size: 4.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .announcement {
+    font-size: 9rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .announcement {
+    font-size: 11rem;
+  }
+}

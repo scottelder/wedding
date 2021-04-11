@@ -82,6 +82,7 @@ typings/
 .nuxt
 /dist/*
 !/dist/index.html
+!styles.css
 
 # Gatsby files
 .cache/
