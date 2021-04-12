@@ -8,12 +8,16 @@ body {
   height: 100%;
 }
 
+.full-width-container {
+  width: 100%;
+}
+
 .landing {
   background-image: url("./img/laughing.png");
   background-size: contain;
   background-repeat: no-repeat;
-  max-width: 900px;
-  height: 1200px;
+  max-width: 675px;
+  height: 900px;
   text-align: center;
   margin: 0 auto;
 }
@@ -40,12 +44,12 @@ body {
 
 @media screen and (min-width: 768px) {
   .announcement {
-    font-size: 9rem;
+    font-size: 8rem;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .announcement {
+  /* .announcement {
     font-size: 11rem;
-  }
+  } */
 }
