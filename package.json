@@ -6,6 +6,9 @@
   "author": "Scott Elder <s.m.elder@gmail.com>",
   "license": "unlicensed",
   "private": true,
+  "engines": {
+    "node": "14.16.1"
+  },
   "scripts": {
     "start": "webpack --mode=production & node server/index.js",
     "start-dev": "webpack --mode=development --watch",
