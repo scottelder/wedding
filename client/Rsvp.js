@@ -10,6 +10,7 @@ export default function Rsvp() {
   return (
     <form className="rsvp rsvp__form" onSubmit={handleSubmit(submitCallback)}>
       <h1 className="rsvp rsvp__header">Respondez s'il vous plait</h1>
+
       <label className="rsvp rsvp__label">First Name</label>
       <input className="rsvp rsvp__text-input" {...register("firstName")} />
 
