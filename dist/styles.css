@@ -62,7 +62,23 @@ body {
 .rsvp__form {
   display: flex;
   flex-direction: column;
-  padding: 4em;
+  padding: 0 2em;
+}
+
+.rsvp__submit {
+  background-color: mediumaquamarine;
+  color: #1a1a1a;
+  border-radius: 4px;
+  font-size: 2em;
+  border: none;
+  margin-top: 0.5em;
+}
+
+.rsvp__text-input {
+  margin-bottom: 1em;
+  height: 2em;
+  border-radius: 4px;
+  color: #000;
 }
 
 @media screen and (min-width: 321px) {
