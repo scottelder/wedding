@@ -13,27 +13,56 @@ body {
 }
 
 .landing {
-  background-image: url("./img/laughing.png");
-  background-size: contain;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img/trail-of-lights.jpg");
+  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
-  max-width: 675px;
-  height: 900px;
+  max-height: 1080px;
+  text-align: left;
+  margin: 0 auto 2em;
   text-align: center;
-  margin: 0 auto;
-}
-
-.transparent-layer {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.25);
 }
 
 .announcement {
   margin: 0;
-  font-weight: 900;
-  max-width: 100%;
-  color: rgba(255, 255, 255, 0.75);
+  color: #dcdcdc;
   font-size: 3.75rem;
+  font-family: Allura, serif;
+}
+
+.topics {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.topic {
+  font-family: Allura, serif;
+  margin: 0 auto;
+  color: #dcdcdc;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+.topic__link {
+  text-decoration: none;
+  color: #dcdcdc;
+}
+
+.topic__link:visited,
+.topic__link:active {
+  color: #dcdcdc;
+}
+
+.rsvp {
+  color: #fff;
+}
+
+.rsvp__form {
+  display: flex;
+  flex-direction: column;
+  padding: 4em;
 }
 
 @media screen and (min-width: 321px) {
