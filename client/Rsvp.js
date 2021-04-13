@@ -17,8 +17,8 @@ export default function Rsvp() {
       <label className="rsvp rsvp__label">Last Name</label>
       <input className="rsvp rsvp__text-input" {...register("lastName")} />
 
-      <label className="rsvp rsvp__label">What is your COVID comfortability?</label>
-      <input className="rsvp rsvp__text-input" {...register("currentVaccinationStatus")} />
+      <label className="rsvp rsvp__label">What is your COVID comfort?</label>
+      <input className="rsvp rsvp__text-input" {...register("covidComfort")} />
 
       <label className="rsvp rsvp__label">Current COVID-19 Vaccination Status</label>
       <input className="rsvp rsvp__text-input" {...register("currentVaccinationStatus")} />
