@@ -78,6 +78,10 @@ body {
   color: lightcoral;
 }
 
+.rsvp__error--text {
+  margin-left: 0.5em;
+}
+
 .rsvp__radio-container {
   padding-bottom: 1em;
 }
@@ -110,7 +114,7 @@ body {
 }
 
 .rsvp__name-container {
-  width: 49%;
+  width: 100%;
 }
 
 .rsvp__textarea {
@@ -137,10 +141,10 @@ body {
   .announcement {
     font-size: 8rem;
   }
+  .rsvp__name-container {
+    width: 49%;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-  /* .announcement {
-    font-size: 11rem;
-  } */
 }

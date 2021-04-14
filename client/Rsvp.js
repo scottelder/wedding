@@ -13,8 +13,11 @@ export default function Rsvp() {
   } = useForm();
   return (
     <form className="rsvp rsvp__form" onSubmit={handleSubmit(submitCallback)}>
-      <h1 className="rsvp rsvp__header">Respondez s'il vous plait</h1>
+      <h1 className="rsvp rsvp__header">Réspondez s'il vous plait</h1>
 
+      {errors.rsvp && errors.rsvp.type === "required" && (
+        <span className="rsvp rsvp__error">We need to know if you're coming!</span>
+      )}
       <div className="rsvp rsvp__radio-container">
         <label className="rsvp rsvp__label rsvp__label--radio">We're coming!</label>
         <input
@@ -39,26 +42,25 @@ export default function Rsvp() {
           value="neither"
           {...register("rsvp", { required: true })}
         />
-        {errors.rsvp && errors.rsvp.type === "required" && (
-          <span className="rsvp rsvp__error">We need to know if you're coming!</span>
-        )}
       </div>
 
       <section className="rsvp rsvp__section">
         <span className="rsvp rsvp__name-container">
-          <label className="rsvp rsvp__label">First Name</label>
+          <label className="rsvp rsvp__label">Individual 1 First Name</label>
+          {errors.individual1 && errors.individual1.firstName && errors.individual1.firstName.type === "required" && (
+            <span className="rsvp rsvp__error rsvp__error--text">Required!</span>
+          )}
+          <input className="rsvp rsvp__text-input" {...register("individual1.firstName", { required: true })} />
+          <label className="rsvp rsvp__label">Individual 1 Last Name</label>
+          {errors.individual1 && errors.individual1.lastName && errors.individual1.lastName.type === "required" && (
+            <span className="rsvp rsvp__error rsvp__error--text">Required!</span>
+          )}
+          <input className="rsvp rsvp__text-input" {...register("individual1.lastName", { required: true })} />
+        </span>
+        <span className="rsvp rsvp__name-container">
+          <label className="rsvp rsvp__label">Individual 2 First Name</label>
           <input className="rsvp rsvp__text-input" {...register("individual1.firstName")} />
-        </span>
-        <span className="rsvp rsvp__name-container">
-          <label className="rsvp rsvp__label">First Name</label>
-          <input className="rsvp rsvp__text-input" {...register("individual1.firstName")} />
-        </span>
-        <span className="rsvp rsvp__name-container">
-          <label className="rsvp rsvp__label">Last Name</label>
-          <input className="rsvp rsvp__text-input" {...register("individual1.lastName")} />
-        </span>
-        <span className="rsvp rsvp__name-container">
-          <label className="rsvp rsvp__label">Last Name</label>
+          <label className="rsvp rsvp__label">Individual 2 Last Name</label>
           <input className="rsvp rsvp__text-input" {...register("individual1.lastName")} />
         </span>
       </section>
