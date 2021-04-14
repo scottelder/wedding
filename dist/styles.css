@@ -13,7 +13,8 @@ body {
 }
 
 .landing {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img/trail-of-lights.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./img/trail-of-lights.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -90,6 +91,10 @@ body {
   font-size: 1.2em;
 }
 
+.rsvp__radio {
+  width: 30%;
+}
+
 .rsvp__radio-input {
   cursor: pointer;
 }
@@ -129,6 +134,18 @@ body {
   font-size: 2em;
   border: none;
   margin-top: 0.5em;
+}
+
+.response-error {
+  font-family: Fira-sans, sans-serif;
+  padding-top: 1em;
+  font-size: 2em;
+  color: lightcoral;
+}
+
+.response-error__email-link {
+  text-decoration: underline;
+  color: lightcoral;
 }
 
 @media screen and (min-width: 321px) {
