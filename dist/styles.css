@@ -148,6 +148,12 @@ body {
   color: lightcoral;
 }
 
+.please-wait {
+  font-size: 2em;
+  padding: 0;
+  color: #dcdcdc;
+}
+
 @media screen and (min-width: 321px) {
   .announcement {
     font-size: 4.5rem;

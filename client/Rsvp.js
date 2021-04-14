@@ -7,7 +7,7 @@ export default function Rsvp() {
   const submitCallback = (data) => {
     axios
       .post("/submit", data)
-      .then(console.log)
+      .then(setIsError(false))
       .catch(() => setIsError(true));
   };
 

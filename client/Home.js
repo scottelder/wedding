@@ -27,9 +27,13 @@ export default function Home() {
           </Link>
         </li>
         <li className="topic">
-          <Link to="/zola" className="topic__link">
+          <a
+            href="https://www.zola.com/registry/linandscott"
+            target="_blank"
+            className="topic__link"
+          >
             Registry
-          </Link>
+          </a>
         </li>
       </ul>
     </div>
