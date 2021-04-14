@@ -1,5 +1,6 @@
 const { Client } = require("pg");
 
+console.log(process.env.DATABASE_URL);
 const client = new Client({
   connectionString: process.env.DATABASE_URL,
   ssl: {
@@ -7,7 +8,7 @@ const client = new Client({
   },
 });
 
-client.connect();
+client.connect().catch(console.error);
 
 client.query("SELECT table_schema,table_name FROM information_schema.tables;", (err, res) => {
   if (err) throw err;
