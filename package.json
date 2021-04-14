@@ -13,7 +13,7 @@
     "start": "node server/index.js",
     "postinstall": "yarn build",
     "build": "webpack",
-    "start-dev": "webpack --mode=development --watch",
+    "build-dev": "webpack --mode=development --watch",
     "server": "nodemon server/index.js"
   },
   "dependencies": {

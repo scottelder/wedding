@@ -74,6 +74,19 @@ body {
   color: #fff;
 }
 
+.rsvp__radio-container {
+  padding-bottom: 1em;
+}
+
+.rsvp__label--radio {
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.rsvp__label--radio:not(:first-child) {
+  padding-left: 1em;
+}
+
 .rsvp__text-input {
   margin-bottom: 1em;
   height: 2em;
