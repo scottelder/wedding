@@ -108,6 +108,11 @@ export default function Rsvp() {
 
         <label className="rsvp rsvp__label">
           Are you comfortable interacting:
+          {errors.isComfortable && errors.isComfortable.type === "required" && (
+            <span className="rsvp rsvp__error rsvp__error--text">
+              Required!
+            </span>
+          )}
         </label>
         <div className="rsvp rsvp__radio-container">
           <span className="rsvp rsvp__radio">
