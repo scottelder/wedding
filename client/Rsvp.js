@@ -4,11 +4,18 @@ import axios from "axios";
 
 export default function Rsvp() {
   const [isError, setIsError] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
   const submitCallback = (data) => {
     axios
       .post("/submit", data)
-      .then(setIsError(false))
-      .catch(() => setIsError(true));
+      .then(() => {
+        setIsError(false);
+        setIsSuccess(true);
+      })
+      .catch(() => {
+        setIsError(true);
+        setIsSuccess(false);
+      });
   };
 
   const {
@@ -161,7 +168,7 @@ export default function Rsvp() {
         <input className="rsvp rsvp__submit" type="submit" />
 
         {isError && (
-          <footer className="response-error">
+          <footer className="response response--error">
             Something went wrong with the RSVP! If it doesn't resolve itself
             within a few minutes, please email us at{" "}
             <a
@@ -170,6 +177,12 @@ export default function Rsvp() {
             >
               lindandscottgetmarried@gmail.com
             </a>
+          </footer>
+        )}
+        {isSuccess && (
+          <footer className="response response--success">
+            We&apos;ve received your RSVP! If you need to make any changes, just
+            resubmit the form and we&apos;ll take care of the rest.
           </footer>
         )}
       </form>

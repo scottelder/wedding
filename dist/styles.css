@@ -136,11 +136,17 @@ body {
   margin-top: 0.5em;
 }
 
-.response-error {
+.response {
   font-family: Fira-sans, sans-serif;
   padding-top: 1em;
   font-size: 2em;
+  text-align: center;
+}
+.response--error {
   color: lightcoral;
+}
+.response--success {
+  color: #81948c;
 }
 
 .response-error__email-link {
