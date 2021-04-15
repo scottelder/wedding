@@ -1,21 +1,25 @@
-const { Client } = require("pg");
+const { Slide } = require("@material-ui/core");
+const { ConnectContactLens } = require("aws-sdk");
+const { Pool } = require("pg");
 
-const client = new Client({
+const pool = new Pool({
   connectionString: process.env.DATABASE_URL,
   ssl: {
     rejectUnauthorized: false,
   },
 });
 
-client.connect().catch(console.error);
-
 const selectAll = (cb) => {
-  client.query(`select * from rsvp`, (err, res) => {
-    if (err) cb(err);
-    if (res) cb(res);
-    client.end();
+  pool.connect((connectionError, client, release) => {
+    if (connectionError) console.log(connectionError, "connectionError");
+    client.query(`select * from rsvp`, (err, res) => {
+      if (err) cb(err);
+      if (res) cb(res);
+      release();
+    });
   });
 };
+// selectAll(console.log);
 // selectAll(console.log);
 
 const upsertRsvp = (data, cb) => {
@@ -53,10 +57,13 @@ const upsertRsvp = (data, cb) => {
     dietaryConsiderations,
     anythingElse,
   ];
-  client.query(text, values, (err, res) => {
-    if (err) cb(err, null);
-    else cb(null, res);
-    client.end();
+  pool.connect((connectionError, client, release) => {
+    if (connectionError) console.log(connectionError, "connectionError");
+    client.query(text, values, (err, res) => {
+      if (err) cb(err, null);
+      else cb(null, res);
+      release();
+    });
   });
 };
 
