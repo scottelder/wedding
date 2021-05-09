@@ -1,5 +1,7 @@
-import React from "react";
+import styled from "@emotion/styled";
 
-export const Section = () => <section className="section"></section>;
+export const Section = styled.section``;
 
-export const Article = () => <article className="article"></article>;
+export const Article = styled.article`
+  padding: 2em;
+`;

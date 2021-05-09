@@ -1,13 +1,46 @@
 import React from "react";
+import styled from "@emotion/styled";
+import { Link as RouterLink } from "react-router-dom";
 
-export const Headline = () => <h1 className="headline"></h1>;
+export const Headline = styled.h1`
+  font-size: 2.5em;
+  padding: 0;
+  margin-top: 0;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+`;
 
-export const Subheadline = () => <h2 className="subheadline"></h2>;
+export const Subheadline = styled.h2`
+  font-size: 1.5em;
+  padding: 0;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+`;
 
-export const Paragraph = () => <p className="paragraph"></p>;
+export const Paragraph = styled.p``;
 
-export const ExternalLink = ({ src, label }) => (
-  <a href={src} target="_blank" className="link">
+export const Anchor = styled.a`
+  color: black;
+  text-decoration: none;
+
+  :visited,
+  :active {
+    color: black;
+  }
+`;
+
+export const Link = styled(RouterLink)`
+  color: black;
+  text-decoration: none;
+
+  :visited,
+  :active {
+    color: black;
+  }
+`;
+
+export const ExternalLink = ({ src, label, className }) => (
+  <Anchor href={src} target="_blank" className={className}>
     {label}
-  </a>
+  </Anchor>
 );

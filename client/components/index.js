@@ -1,13 +1,20 @@
 import { Article, Section } from "./Layout";
-import { Headline, Subheadline, Paragraph, ExternalLink } from "./Typography";
+import {
+  Headline,
+  Subheadline,
+  Paragraph,
+  Link,
+  ExternalLink,
+} from "./Typography";
 import { List, Item } from "./Lists";
 
-export default {
+export {
   Article,
   Section,
   Headline,
   Subheadline,
   Paragraph,
+  Link,
   ExternalLink,
   List,
   Item,

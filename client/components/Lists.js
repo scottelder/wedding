@@ -1,5 +1,10 @@
-import React from "react";
+import styled from "@emotion/styled";
 
-export const List = () => <ul className="list"></ul>;
+export const List = styled.ul`
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+`;
 
-export const Item = () => <li className="item"></li>;
+export const Item = styled.li``;
