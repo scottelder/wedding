@@ -7,4 +7,6 @@ export const List = styled.ul`
   padding: 0;
 `;
 
-export const Item = styled.li``;
+export const Item = styled.li`
+  margin-bottom: 1em;
+`;

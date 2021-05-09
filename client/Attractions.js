@@ -1,4 +1,5 @@
 import React from "react";
+import styled from "@emotion/styled";
 import {
   Article,
   Headline,
@@ -9,16 +10,17 @@ import {
   ExternalLink,
 } from "./components";
 
+const AttractionsArticle = styled(Article)`
+  text-align: center;
+`;
+
 export default function Attractions() {
   return (
-    <Article class="attractions">
-      <Headline className="our-story__headline">
-        Visiting Austin for the first time? Here are a few of our favorite
-        spots!
-      </Headline>
+    <AttractionsArticle>
+      <Headline>Visiting Austin for the first time?</Headline>
 
       <Section>
-        <Subheadline className="our-story__subheadline">Breakfast</Subheadline>
+        <Subheadline>Breakfast</Subheadline>
         <List>
           <Item>
             <ExternalLink
@@ -45,7 +47,7 @@ export default function Attractions() {
       </Section>
 
       <Section>
-        <Subheadline className="our-story__subheadline">Tex-Mex</Subheadline>
+        <Subheadline>Tex-Mex</Subheadline>
         <List>
           <Item>
             <ExternalLink src="https://www.polvosaustin.com/" label="Polvo's" />
@@ -63,7 +65,7 @@ export default function Attractions() {
       </Section>
 
       <Section>
-        <Subheadline className="our-story__subheadline">Barbecue</Subheadline>
+        <Subheadline>Barbecue</Subheadline>
         <List>
           <Item>
             <ExternalLink
@@ -81,7 +83,7 @@ export default function Attractions() {
       </Section>
 
       <Section>
-        <Subheadline className="our-story__subheadline">To visit</Subheadline>
+        <Subheadline>To visit</Subheadline>
         <List>
           <Item>
             <ExternalLink
@@ -109,6 +111,6 @@ export default function Attractions() {
           </Item>
         </List>
       </Section>
-    </Article>
+    </AttractionsArticle>
   );
 }

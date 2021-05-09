@@ -20,22 +20,22 @@ export const Subheadline = styled.h2`
 export const Paragraph = styled.p``;
 
 export const Anchor = styled.a`
-  color: black;
+  color: #4c627c;
   text-decoration: none;
 
   :visited,
   :active {
-    color: black;
+    color: #4c627c;
   }
 `;
 
 export const Link = styled(RouterLink)`
-  color: black;
+  color: #4c627c;
   text-decoration: none;
 
   :visited,
   :active {
-    color: black;
+    color: #4c627c;
   }
 `;
 
