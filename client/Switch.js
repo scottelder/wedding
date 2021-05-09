@@ -4,6 +4,8 @@ import { Switch, Route } from "react-router-dom";
 import Rsvp from "./Rsvp";
 import About from "./About";
 import Home from "./Home";
+import Attractions from "./Attractions";
+import Details from "./Details";
 
 export default function Switcheroo() {
   return (
@@ -13,6 +15,12 @@ export default function Switcheroo() {
       </Route>
       <Route path="/about">
         <About />
+      </Route>
+      <Route path="/attractions">
+        <Attractions />
+      </Route>
+      <Route path="/details">
+        <Details />
       </Route>
       <Route path="/">
         <Home />

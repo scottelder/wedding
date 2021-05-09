@@ -1,78 +1,26 @@
 body {
   margin: 0;
-  background-color: #1a1a1a;
+  background-color: #e9e8de;
 }
+
+/*
+Greens: #3E5152 #81948C
+Blue-green: #2B3B44
+Blues: #4C627C #5C7594
+Off-white: #E1E0D2 #C7C7C0
+Greys: #B5B5BB
+*/
 
 #root {
   width: 100%;
   height: 100%;
-}
-
-.full-width-container {
-  width: 100%;
-}
-
-.landing {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("./img/trail-of-lights.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  max-height: 1080px;
-  text-align: left;
-  margin: 0 auto 2em;
-  text-align: center;
-}
-
-.announcement {
-  margin: 0;
-  color: #dcdcdc;
-  font-size: 3.75rem;
-  font-family: Allura, serif;
-}
-
-.topics {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-}
-
-.topic {
-  font-family: Allura, serif;
-  margin: 0 auto;
-  color: #dcdcdc;
-  font-size: 3rem;
-  text-align: center;
-  margin-bottom: 1.5em;
-}
-
-.topic__link {
-  text-decoration: none;
-  color: #dcdcdc;
-}
-
-.topic__link:visited,
-.topic__link:active {
-  color: #dcdcdc;
-}
-
-.rsvp {
-  font-family: "Fira-sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .rsvp__form {
   display: flex;
   flex-direction: column;
   padding: 0 2em;
-}
-
-.rsvp__header {
-  color: #fff;
-}
-
-.rsvp__label {
-  color: #fff;
 }
 
 .rsvp__error {
@@ -107,7 +55,7 @@ body {
   margin-bottom: 1em;
   height: 2em;
   border-radius: 4px;
-  color: #000;
+  color: black;
   width: 100%;
   display: inline-block;
 }
@@ -154,16 +102,7 @@ body {
   color: lightcoral;
 }
 
-.please-wait {
-  font-size: 2em;
-  padding: 0;
-  color: #dcdcdc;
-}
-
 @media screen and (min-width: 321px) {
-  .announcement {
-    font-size: 4.5rem;
-  }
 }
 
 @media screen and (min-width: 768px) {

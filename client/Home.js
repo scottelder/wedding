@@ -1,41 +1,94 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import styled from "@emotion/styled";
+import { Link, ExternalLink, List, Item, Headline } from "./components";
+
+const linkStyles = `
+color: #fff;
+
+:visited,
+:active {
+  color: #fff;
+}
+`;
+
+const StyledLink = styled(Link)`
+  ${linkStyles}
+`;
+
+const StyledExternalLink = styled(ExternalLink)`
+  ${linkStyles}
+`;
+
+const NavItem = styled(Item)`
+  margin: 0 auto;
+  font-size: 1.75rem;
+  text-align: center;
+  margin-bottom: 1.5em;
+  font-family: "Playfair Display", serif;
+
+  @media screen and (min-width: 768px) {
+    font-size: 3rem;
+  }
+`;
+
+const Announcement = styled(Headline)`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 0 0 2em 0;
+  height: 40%;
+  color: #fff;
+
+  @media screen and (min-width: 768px) {
+    font-size: 5rem;
+  }
+`;
+
+const Main = styled.main`
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./img/trail-of-lights.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: left;
+  text-align: center;
+`;
 
 export default function Home() {
   return (
-    <div className="full-width-container full-width-container--slanted-border">
-      <main className="landing">
-        <h1 className="announcement">
-          Linden & Scott
-          <br />
-          Are
-          <br />
-          Getting
-          <br />
-          Married
-        </h1>
-      </main>
-      <ul className="topics">
-        <li className="topic">
-          <Link to="/rsvp" className="topic__link">
-            RSVP
-          </Link>
-        </li>
-        <li className="topic">
-          <Link to="/about" className="topic__link">
-            About Us
-          </Link>
-        </li>
-        <li className="topic">
-          <a
-            href="https://www.zola.com/registry/linandscott"
-            target="_blank"
-            className="topic__link"
-          >
-            Registry
-          </a>
-        </li>
-      </ul>
-    </div>
+    <Main>
+      <Announcement>
+        <div>Linden & Scott</div>
+        <div>Are</div>
+        <div>Getting</div>
+        <div>Married</div>
+      </Announcement>
+
+      <List>
+        <NavItem>
+          <StyledLink to="/rsvp">RSVP</StyledLink>
+        </NavItem>
+
+        <NavItem>
+          <StyledLink to="/about">Our Story</StyledLink>
+        </NavItem>
+
+        <NavItem>
+          <StyledLink to="/details">Event Details</StyledLink>
+        </NavItem>
+
+        <NavItem>
+          <StyledLink to="/attractions">Austin Attractions</StyledLink>
+        </NavItem>
+
+        <NavItem>
+          <StyledExternalLink
+            src="https://www.zola.com/registry/linandscott"
+            label="Registry"
+          />
+        </NavItem>
+      </List>
+    </Main>
   );
 }
