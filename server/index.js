@@ -5,11 +5,9 @@ const app = express();
 const path = require("path");
 app.use(express.json());
 
-const { upsertRsvp } = require("./db");
+const { upsertRsvp, selectAll } = require("./db");
 
-app.use("/", express.static(path.join(__dirname, "../dist")));
-app.use("/rsvp", express.static(path.join(__dirname, "../dist")));
-app.use("/about", express.static(path.join(__dirname, "../dist")));
+app.use(express.static(path.join(__dirname, "../dist")));
 app.use("/img", express.static(path.join(__dirname, "../images")));
 
 app.post("/submit", (req, res) => {
@@ -18,6 +16,10 @@ app.post("/submit", (req, res) => {
     else res.send(`successuflly uploaded}`);
   };
   upsertRsvp(req.body, callback);
+});
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../dist/index.html"));
 });
 
 app.listen(port, () => {
