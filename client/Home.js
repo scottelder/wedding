@@ -27,7 +27,7 @@ const NavItem = styled(Item)`
   font-family: "Playfair Display", serif;
 
   @media screen and (min-width: 768px) {
-    font-size: 2.5rem;
+    font-size: 2em;
   }
 `;
 
@@ -40,7 +40,7 @@ const Announcement = styled(Headline)`
   color: #fff;
 
   @media screen and (min-width: 768px) {
-    font-size: 5rem;
+    font-size: 4em;
   }
 `;
 
