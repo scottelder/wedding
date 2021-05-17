@@ -47,7 +47,7 @@ const Announcement = styled(Headline)`
 const Main = styled.main`
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("./img/trail-of-lights.jpg");
+    url("./img/engagement-bridge.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

@@ -8,6 +8,7 @@ import {
   Paragraph,
   List,
   Item,
+  ExternalLink,
 } from "./components";
 
 const DetailsArticle = styled(Article)`
@@ -73,6 +74,16 @@ export default function Details() {
           <Item>
             The rehearsal dinner will be indoors, and we will try to seat guests
             with people they know and spend time with for COVID-safety purposes.
+          </Item>
+          <Item>
+            <strong>
+              Please RSVP by email to
+              <ExternalLink
+                src="mailto:davidspeedelder@gmail.com"
+                label=" davidspeedelder@gmail.com "
+              />
+              by June 8th.
+            </strong>
           </Item>
         </List>
         <h4>Schedule</h4>
