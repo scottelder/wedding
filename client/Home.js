@@ -27,7 +27,7 @@ const NavItem = styled(Item)`
   font-family: "Playfair Display", serif;
 
   @media screen and (min-width: 768px) {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 `;
 
