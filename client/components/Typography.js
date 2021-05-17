@@ -15,6 +15,7 @@ export const Subheadline = styled.h2`
   padding: 0;
   font-family: "Playfair Display", serif;
   font-weight: 400;
+  margin-top: 2em;
 `;
 
 export const Paragraph = styled.p``;

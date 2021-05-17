@@ -53,7 +53,46 @@ export default function About() {
 
       <Section>
         <Subheadline>Scott's View</Subheadline>
-        <Paragraph>Gotta write some stuff here.</Paragraph>
+        <Paragraph>
+          I knew from the first time I saw her. Later, there would be doubt and
+          fear, but that first moment was crystalline certainty. We were sitting
+          in the Hack Reactor classroom, about to commence my cohort’s first day
+          of web dev boot camp, and she looked amazing. I’m not permitted to
+          broadcast what my very first thoughts were, but it’s safe to say they
+          started a six-months-long odyssey of overthinking our every
+          interaction.
+        </Paragraph>
+        <Paragraph>
+          The first date after months of agony was electric. We were so clearly
+          on the same wavelength it made me wonder why we’d waited so long to
+          get together. Everything that came after was tuned to that same
+          frenetic frequency built on the foundation we’d built communicating
+          and solving problems together at Hack Reactor for the past six months.
+          It felt easy, not because relationships are easy, but because we had
+          such a good rapport that we tackled problems in tandem cleaned up
+          messes before they could fester into anything serious.
+        </Paragraph>
+        <Paragraph>
+          The final test was, of course, my dog Duke. If you’ve met him, you
+          know he’s a major league piece of shit — anxious, nosy, and defensive
+          for all the wrong reasons. He’s hard to love but well worth the effort
+          once it he lets you into his bubble. Linden had expressed her distaste
+          for small, anxious dogs in the past and I was worried that they
+          wouldn’t get along once we moved in together, but nothing could have
+          been further from the truth. Their deep affection for one another is
+          clear and Duke now prefers to come to her for pets and cuddling even
+          when we’re sitting on the couch next to each other. It’s absolutely
+          wonderful.
+        </Paragraph>
+        <Paragraph>
+          I knew from the first; I know now, too. My feelings have only matured
+          and distilled as our relationship grew. We’ve had more crises, more
+          arguments, and more time alone with each other over the last two years
+          than anyone could have guessed and through it all we’ve maintained the
+          same problem-solving dynamic that made the early days move so quickly.
+          I can’t wait to tie the knot and get back to the business of growing
+          and learning together.
+        </Paragraph>
       </Section>
     </Article>
   );
