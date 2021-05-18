@@ -7,15 +7,17 @@ import {
   ExternalLink,
 } from "./Typography";
 import { List, Item } from "./Lists";
+import Image from "./Image";
 
 export {
   Article,
-  Section,
-  Headline,
-  Subheadline,
-  Paragraph,
-  Link,
   ExternalLink,
-  List,
+  Headline,
+  Image,
   Item,
+  Link,
+  List,
+  Paragraph,
+  Section,
+  Subheadline,
 };

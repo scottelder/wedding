@@ -45,7 +45,8 @@ const Announcement = styled(Headline)`
 `;
 
 const Main = styled.main`
-  height: 100vh;
+  min-height: 100vh;
+  overflow: hidden;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("./img/engagement-bridge.jpg");
   background-position: center;
