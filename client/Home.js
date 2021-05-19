@@ -54,6 +54,14 @@ const Main = styled.main`
   background-repeat: no-repeat;
   text-align: left;
   text-align: center;
+  position: relative;
+`;
+
+const Footer = styled.footer`
+  color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 `;
 
 export default function Home() {
@@ -90,6 +98,7 @@ export default function Home() {
           />
         </NavItem>
       </List>
+      <Footer>All photos by Rob August.</Footer>
     </Main>
   );
 }
