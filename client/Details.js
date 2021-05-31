@@ -52,21 +52,24 @@ export default function Details() {
       <Section>
         <Subheadline>COVID-19</Subheadline>
         <Paragraph>
-          <strong>
-            All of our guests who have RSVPed will be vaccinated by June 12th.
-          </strong>
+          <strong>All of our guests will be vaccinated by June 12th.</strong>
         </Paragraph>
         <Paragraph>
           We are planning for the ceremony and wedding events to be outdoors,
-          and will be spacing people for both dinner and the ceremony.
+          and will be spacing people for both dinner and the ceremony. All of
+          the guests who have RSVPed will be vaccinated.
         </Paragraph>
         <Paragraph>
-          We are keeping a close eye on developing CDC recommendations and will
-          update with more detailed information about 2 weeks before the
-          wedding.
+          In the event of rain, we will hold the ceremony indoors. The hall is
+          large enough that we will still be able to space people for both
+          dinner and the ceremony.
+        </Paragraph>
+        <Paragraph>
+          We are not requiring guests to wear masks. A few guests with young
+          children would like to wear masks&mdash;please respect their desire
+          for distance.
         </Paragraph>
       </Section>
-
       <Section>
         <Subheadline>Rehearsal + Rehearsal Dinner</Subheadline>
         <List>
@@ -99,7 +102,6 @@ export default function Details() {
           </GridItem>
         </List>
       </Section>
-
       <Section>
         <Subheadline>Wedding</Subheadline>
         <List>
